@@ -5,6 +5,7 @@ pipeline {
       agent any
       steps {
         echo 'minimal pipeline'
+        bat(script: 'hello.bat', returnStatus: true)
       }
     }
   }
