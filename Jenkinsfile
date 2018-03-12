@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('initialize') {
+      agent any
       steps {
-        echo 'init start'
+        echo 'minimal pipeline'
       }
     }
   }
