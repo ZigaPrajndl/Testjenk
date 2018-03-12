@@ -4,7 +4,7 @@ pipeline {
     stage('initialize') {
       agent any
       steps {
-        bat 'hello.bat'
+        bat '*.bat'
       }
     }
   }
