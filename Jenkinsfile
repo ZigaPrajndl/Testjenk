@@ -4,7 +4,7 @@ pipeline {
     stage('initialize') {
       agent any
       steps {
-        bat '*.bat'
+        bat(script: 'hello', encoding: 'UTF-8')
       }
     }
   }
